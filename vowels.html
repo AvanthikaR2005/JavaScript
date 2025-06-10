@@ -1,0 +1,45 @@
+<script>
+	function splitvowels(){
+		var vowels=['a','e','i','o','u','A','E','I','O','U'];
+		var consonantarray="";
+		var vowelarray="";
+		var checked=0;
+		
+		for(i=0;i<word.length;i++){
+			var checked=word[i];
+			for(j=0;j<vowels.length;j++){
+				if(checked==vowels[j]){
+					document.write(vowelarray);
+					break;
+
+				}
+				else{
+					document.write(consonantarray);
+					
+				}
+			}
+		}
+	}
+	var word=prompt("Enter the string:");
+
+	splitvowels(word);				
+					
+</script>
+
+
+   
+		
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
