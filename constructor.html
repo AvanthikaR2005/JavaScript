@@ -1,0 +1,45 @@
+<script>
+
+class TATA{
+   constructor(b,t){
+       this.business=b;
+       this.type=t;
+   
+       document.write("construction of class TATA is called" + "<br/>");
+       document.write("The business is" +this.business +"<br/>" + "the type of business is :"+this.type+"<br/>");
+   }
+   messagefromTATA(){
+        document.write("printing from class ABC,displaymessage1"+"<br?>"+ "BUSINESS:" + this.business+ "<br/>"+ "TYPE:"+this.type+"<br/>");
+   }
+   
+   displayMessage2(){
+      document.write("printing from class ABC,displayMessage2"+"<br/>");
+      }
+}
+ class NEXON extends TATA{
+     constructor(c,v,b,t){
+          super(b,t);
+          this.color=c;
+          this.variant=v;
+          document.write("Construction of class DEF called"+"<br/>");
+          document.write("the color is:"+this.color+"<br/>"+"the variant is"+this.variant+"<br/>");
+     }
+     
+     displayMessage3(){
+        super.messagefromTATA();
+        document.write("printing from class DEF,displayMessage3"+"<br/>");
+        document.write("the color is:"+this.color+"<br/>"+"the variant of car is:"+this.variant+"<br/>");
+        }
+}
+ var obj2=new NEXON ("Black","EV","Automobiles","commercial cars");
+ obj2.displayMessage3();
+
+</script>
+        
+
+
+ 
+
+   
+       
+          

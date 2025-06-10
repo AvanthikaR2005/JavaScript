@@ -1,0 +1,33 @@
+<script>
+    
+var word1=prompt("Enter the first word:");
+var word2=prompt("Enter the second word:");
+var size=word1.length;
+var c=0;
+var checked=[];
+
+if(word1.length==word2.length){
+     for(i=0;i<word1.length;i++){
+        for(j=0;j<word2.length;j++){
+          if(word1[i]==word2[j]&&checked[j]!=true){
+             checked[j]=true;
+             c++;
+          }
+            
+      	
+
+        }
+     }
+     
+}
+
+if(size==c){
+    document.write("they are anagrams");
+}
+else{
+    document.write("they are not anagrams");
+}
+</script>
+
+
+     

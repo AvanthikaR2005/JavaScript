@@ -1,0 +1,30 @@
+<script>
+var size=Number(prompt("Enter the number of elements:"));
+var arr=[];
+for(i=0;i<size;i++){
+   arr[i]=Number(prompt("Enter the elements:"));
+}
+
+var small=arr[0];
+var big=arr[0];
+
+for(i=0;i<size;i++){
+  if(arr[i]<small){
+     small=arr[i];
+  }
+  if(arr[i]>big){
+     big=arr[i];
+  }
+ 
+}
+document.write("the largest number is:" +big);
+document.write("the smallest number is:" +small);
+
+
+    
+
+
+
+
+</script>
+
