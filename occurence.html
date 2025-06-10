@@ -1,0 +1,23 @@
+<script>
+
+var word=prompt("Enter the word:");
+var occurence={};
+for(i=0;i<word.length;i++){
+		var letter=word[i];
+
+	if(occurence[letter]){
+		occurence[letter]++;
+	}
+	else{
+		occurence[letter]=1;
+	}
+	
+
+	
+}
+for(var i in occurence){
+
+	document.write(i+":"+occurence[i]+"<br/>");
+
+}
+</script>
